@@ -1,5 +1,11 @@
 public class Main {
     public static void main(String[] args) {
-        System.out.println("Hello, World!");
+
+        SudokuGenerator sg = new SudokuGenerator(Difficulty.EASY);
+
+        sg.generateWholeGrid();
+
+        System.out.println(sg);
+
     }
 }
